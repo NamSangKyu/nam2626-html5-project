@@ -37,29 +37,29 @@
 <body>
 <div id="container">
 	<h1>가입 정보</h1>
-	<form (        )="register.php" id="reg_form">
+	<form action="register.php" id="reg_form">
 		<ul>
 			<li>
-				<label (           )="name">이름</label>
-				<input type="text" id="(          )" (           )="홍길동"  (           )>
+				<label for="name">이름</label>
+				<input type="text" id="name" placeholder="홍길동" required>
 			</li>
 			<li>
-				<label (           )="email">이메일</label>
-				<input type="mail" id="email" (           )="abcd@abcd.com" (             )>
+				<label for="email">이메일</label>
+				<input type="mail" id="email" placeholder="abcd@abcd.com" required>
 			</li>
-				<label (           )="pw">비밀번호</label>
-				<input type="(             )" id="pw" (             )>
+				<label for="pw">비밀번호</label>
+				<input type="password" id="pw" required>
 			</li>				
 			<li>
-				<label (           )="sex">성별 </label>
-				<(            ) id="sex">
+				<label for="sex">성별 </label>
+				<select id="sex">
 					<option value="w"> 여성 </option>
 					<option value="m"> 남성 </option>
-				(           )
+				</select>
 			</li>			
 		</ul>
 		<div class="centered">
-			<input (              )="submit" (            )="가입하기">
+			<input type="submit" value="가입하기">
 		</div>	
 	</form>
 </div>
