@@ -3,6 +3,30 @@
 <head>
 	<meta charset="utf-8">
 	<title> 주문서 작성하기</title>
+	<style type="text/css">
+	ul{
+		list-style-type: none;
+	}
+	label.tit {
+		font-weight: bold;
+		width: 80px;
+		float: left;
+	}
+	div.centered {
+	text-align: center;
+	}
+	legend{
+		font-weight: bold;
+		font-size: 18px;
+		color: purple;
+	}
+	ul li{
+		margin-bottom: 10px;
+	}
+	fieldset {
+	margin: 15px 10px;
+}
+	</style>
 </head>
 <body>
 	<h1>상품 주문서</h1>
@@ -10,10 +34,10 @@
 		<legend>개인 정보</legend>
 		<ul>
 			<li>
-				<label>이름 <input type="text" placeholder="여백없이 입력" required></label>
+				<label for="uname" class="tit">이름</label><input type="text" id="uname" placeholder="여백없이 입력" required autofocus>
 			</li>
 			<li>
-				<label>연락처 <input type="tel" placeholder="연락가능한 번호" required></label>
+				<label for="tel" class="tit">연락처</label><input type="tel" placeholder="연락가능한 번호" id="tel" required>
 			</li>
 		</ul>
 	</fieldset>
@@ -21,13 +45,13 @@
 		<legend>배송지 정보</legend>
 		<ul>
 			<li>
-				<label>주소 <input type="text" size="40" max="60" required></label>
+				<label for="address" class="tit">주소</label><input type="text" id="address" size="40" max="60" required>
 			</li>
 			<li>
-				<label>전화번호<input type="tel" required></label>
+				<label for="tel2" class="tit">전화번호</label><input type="tel" required>
 			</li>
 			<li>
-				<label>메모 <textarea cols="40" rows="3"></textarea></label>
+				<label for="memo" class="tit">메모</label><textarea id="memo" cols="40" rows="3"></textarea>
 			</li>
 		</ul>
 	</fieldset>
@@ -48,7 +72,9 @@
 			</li>
 		</ul>
 	</fieldset>
+	<div class="centered">
 	<input type="submit" value="주문하기">
-	<input type="reset" value="다시 작성">	
+	<input type="reset" value="다시 작성">
+	</div>	
 </body>
 </html>

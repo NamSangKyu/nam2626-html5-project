@@ -6,5 +6,33 @@
 </head>
 <body>
 	<h1>상품 주문서</h1>
+	<fieldset>
+		<legend>개인정보</legend>
+		<ul>
+		<li><label>이름<input type="text" placeholder="여백 없이 입력" required></label></li>
+		<li><label>연락처<input type="text" placeholder="여백 없이 입력" required></label></li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>배송지 정보</legend>
+		<ul>
+		<li><label>주소<input type="text" size="40" max="60" required></label></li>
+		<li><label>전화번호<input type="tel2" required></label></li>
+		<li><label>메모<textarea rows="3" cols="40"></textarea></label></li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>주문정보</legend>
+		<ul>
+		<li><label><input type="checkbox">과테말라 안티구아(100g)</label>
+			<label><input type="number" value="0" min="0" max="5">개</label></li>
+		<li><label><input type="checkbox">인도네시아 만델링(100g)</label>
+		<label><input type="number" value="0" min="0" max="5">개</label></li>
+		<li><label><input type="checkbox">탐라는도다(블렌딩)(100g)</label>
+		<label><input type="number" value="0" min="0" max="5">개</label></li>
+		</ul>
+	</fieldset>
+	<label><input type="submit" value="주문하기"></label>
+	<label><input type="reset" value="다시작성"></label>
 </body>
 </html>
